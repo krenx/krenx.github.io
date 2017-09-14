@@ -1,0 +1,12 @@
+{% for section in site.data.sections %}
+    <section class='section' id='section{{section.order}}' style='background-image: url({{section.image}});'>
+    {% if section.order == 0 %}
+      {% include header.html %}
+      {% include nav.html %}
+    {% endif %}
+    <h1>{{ section.h1 }}</h1>
+    {% if section.order == 2 %}
+    {% include footer.html %}
+    {% endif %}
+    </section>
+{% endfor %}

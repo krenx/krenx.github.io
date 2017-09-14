@@ -1,0 +1,14 @@
+- order: 0
+  h1: Hello KrenX
+  subtitle: KrenX
+  image: assets/img/patrick-fore-357913.jpg
+
+- order: 1
+  h1: Easy. Fast. Secure.
+  subtitle: OUR TECHNOLOGY
+  image: assets/img/Caribbean-Islands-From-An-Airplane-Window.jpg
+
+- order: 2
+  h1: Changing the Rules of the Game
+  subtitle: OUR STORY
+  image: assets/img/hd-wallpapers-of-superman-002.jpg
