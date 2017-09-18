@@ -1,6 +1,7 @@
 ---
 title: KrenX - Privacy
 layout: post
+permalink: /privacy/
 ---
 # Privacy Policy
 

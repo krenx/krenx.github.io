@@ -1,6 +1,7 @@
 ---
 title: KrenX - Terms
 layout: post
+permalink: /terms/
 ---
 # Terms of Use ("Terms")
 
