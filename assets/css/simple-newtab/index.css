@@ -1,0 +1,39 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+div {
+  width: 100%;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0.7);
+}
+h3 {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+#install-button {
+  border: none;
+  background-color: rgb(66,133,244);
+  padding: 10px 15px;
+  vertical-align: middle;
+  border-radius: 6px;
+  color: white;
+  font: 400 16px/24px Roboto,sans-serif;
+}
+
+#install-button:hover {
+  border: 1px solid rgb(186,209, 248);
+  background-color: rgb(66,133,244);
+  cursor: pointer;
+}
+
+#install-button:active {
+  border: none;
+  background-color: rgb(51,103,214);
+}
