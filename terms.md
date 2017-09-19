@@ -13,7 +13,7 @@ Please read these Terms of Use ("Terms", "Terms of Use") carefully before using 
 
 
 By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.
-Termination clause is for websites that do not have accounts. If your website or mobile app allows users to register and have an account, create your own Terms of Use.
+Termination clause is for websites that do not have accounts.
 
 
 ## No Representations Or Warranties

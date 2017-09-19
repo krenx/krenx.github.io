@@ -48,7 +48,7 @@ We adopt appropriate data collection, storage and processing practices and secur
 
 
 We do not sell, trade, or rent Users personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates and advertisers for the purposes outlined above. 
-Some of the data collected from you in connection with your use of this addon, as applicable, is shared or otherwise made available to third parties with whom we are affiliated.
+Some of the data collected from you in connection with your use of this extension, as applicable, is shared or otherwise made available to third parties with whom we are affiliated.
 
 
 ## Changes to this privacy policy
