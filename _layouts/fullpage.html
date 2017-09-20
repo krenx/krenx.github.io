@@ -33,6 +33,11 @@
        var console = { log: function() {} };
     </script>
   <![endif]-->
+</head>
+<body>
+  <div id='fullpage'>
+    {% include section.html %}
+  </div>
   <script src="assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/jquery.fullPage.min.js"></script>
   <script type="text/javascript">
@@ -47,11 +52,6 @@
       });
     });
   </script>
-</head>
-<body>
-  <div id='fullpage'>
-    {% include section.html %}
-  </div>
   <!-- ga BEGIN-->
   {% include ga.html %}
   <!-- ga END-->
