@@ -1,7 +1,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /*overflow: hidden;*/
+  overflow-x: hidden;
 }
 
 header, section {
@@ -45,7 +46,7 @@ h3 {
 
 .logo {
   left: 30%;
-  position: fixed;
+  position: absolute;
   background-image: url('/assets/logo/krenx-32.png');
   background-size: 32px 32px;
   width: 32px;
@@ -54,7 +55,7 @@ h3 {
 
 .webstore:link, .webstore:active, .webstore:hover, .webstore:visited {
   right: 30%;
-  position: fixed;
+  position: absolute;
   color:#777777;
   text-decoration: none;
 }
