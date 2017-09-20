@@ -2,6 +2,15 @@
 <html>
 <head>
   <title>Simple Newtab</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- SEO BEGIN -->
+  <title>{{site.title}}</title>
+  <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 260 }}{% else %}{{ site.description | truncate: 260  }}{% endif %}" />
+  <!-- SEO END -->
+
   <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/ddldpkamibcepgebhphbjkcojnbloadk">
   <link rel="stylesheet" type="text/css" href="/assets/css/simple-newtab/index.css">
 </head>
@@ -23,7 +32,7 @@
   <section>
     <h1>Simple Newtab</h1>
     <h3>
-      Simple Newtab brings you amazing experience
+      Do you like this picture? Customize your search page with us.
     </h3>
   </section>
   <section>
