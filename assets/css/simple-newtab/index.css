@@ -4,7 +4,7 @@ html, body {
   overflow: hidden;
 }
 
-div {
+header, section {
   width: 100%;
   padding: 20px 10px;
   text-align: center;
@@ -36,4 +36,36 @@ h3 {
 #install-button:active {
   border: none;
   background-color: rgb(51,103,214);
+}
+
+.laptop img {
+  width: 50%;
+  height: 50%;
+}
+
+.logo {
+  left: 30%;
+  position: fixed;
+  background-image: url('/assets/logo/krenx-32.png');
+  background-size: 32px 32px;
+  width: 32px;
+  height: 32px;
+}
+
+.webstore:link, .webstore:active, .webstore:hover, .webstore:visited {
+  right: 30%;
+  position: fixed;
+  color:#777777;
+  text-decoration: none;
+}
+
+.share {
+  display: block;
+  vertical-align: middle !important;
+  text-align: center;
+}
+
+/* Facebook like button hijack */
+span {
+  vertical-align: inherit !important;
 }

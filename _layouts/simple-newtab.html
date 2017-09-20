@@ -6,13 +6,42 @@
   <link rel="stylesheet" type="text/css" href="/assets/css/simple-newtab/index.css">
 </head>
 <body>
-  <div>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <header>
+    <a href="/" data-type='official-site' class="logo"></a>
+    <a href="https://chrome.google.com/webstore/detail/ddldpkamibcepgebhphbjkcojnbloadk" data-type='webstore' class="webstore">Avaliable in the Chrome Webstore</a>
+  </header>
+
+  <section>
     <h1>Simple Newtab</h1>
     <h3>
       Simple Newtab brings you amazing experience
     </h3>
-  </div>
-  <div><a id='install-button'>Add to Chrome</a></div>
+  </section>
+  <section>
+    <a id='install-button' data-type='install-button'>Add to Chrome</a>
+  </section>
+
+  <section class="laptop">
+    <a data-type="install-by-laptop"><img src="assets/img/laptop.png"></a>
+  </section>
+
+  <footer class="share">
+    <div class="fb-like" data-href="https://www.facebook.com/Krenx-118280125558408/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+
+    <a href="https://twitter.com/ClarkKrenx" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false"></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/116514290869030546803" data-rel="author"></div>
+  </footer>
   <script type="text/javascript" src="/assets/js/simple-newtab/index.js"></script>
   {% include ga.html %}
 </body>
