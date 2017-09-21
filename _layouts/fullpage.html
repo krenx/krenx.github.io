@@ -1,12 +1,22 @@
 <!DOCTYPE html>
+<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths csstransformspreserve3d">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="user-scalable=0,initial-scale=1.0, maximum-scale=1, minimum-scale=0">
 
   <!-- SEO BEGIN -->
   <title>{{site.title}}</title>
   <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta property="og:title" content="Home">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="KrenX">
+  <meta property="og:url" content="http://krenx.com/">
+  <meta property="og:image" content="/assets/logo/krenx-256.png">
+  <meta property="og:description" content="{% if page.description %}{{ page.description | truncate: 260 }}{% else %}{{ site.description | truncate: 260 }}{% endif %}">
   <!-- SEO END -->
 
   <!-- FAVICON BEGIN -->
@@ -27,6 +37,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/fullpage.customized.css" />
   <!-- FULLPAGE END -->
 
+  <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/ddldpkamibcepgebhphbjkcojnbloadk">
 
   <!--[if IE]>
     <script type="text/javascript">
@@ -34,7 +45,7 @@
     </script>
   <![endif]-->
 </head>
-<body>
+<body style="background-color: rgb(233, 161, 185); zoom: 1; transition-duration: 0s;" class="desktop css-animator">
   <div id='fullpage'>
     {% include section.html %}
   </div>
@@ -46,12 +57,13 @@
         verticalCentered: false,
         menu:'#nav',
         anchors: ['home', 'technology', 'about'],
-        continuousVertical: true,
+        sectionsColor: ["#ffffff", "#a66c84", "#d57d7b"],
         //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
         css3:false
       });
     });
   </script>
+  <script type="text/javascript" src="/assets/js/index.js" async></script>
   <!-- ga BEGIN-->
   {% include ga.html %}
   <!-- ga END-->

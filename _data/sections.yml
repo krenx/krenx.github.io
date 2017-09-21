@@ -1,14 +1,11 @@
 - order: 0
-  h1: Hello KrenX
-  subtitle: KrenX
-  image: assets/img/patrick-fore-357913.jpg
+  intro: <h1>Experience the beauty of simplicity</h1><p>Wake you up every morning with stunning view. Enjoy your every search!</p>
+  image: assets/img/background.jpg
 
 - order: 1
-  h1: Easy. Fast. Secure.
-  subtitle: OUR TECHNOLOGY
-  image: assets/img/Caribbean-Islands-From-An-Airplane-Window.jpg
+  title: HI, WE ARE KRENX
+  description: WE AIM AT CHANGING THE WAYS OF DIGITAL MARKETING WITH INNOVATION.
 
 - order: 2
-  h1: Changing the Rules of the Game
-  subtitle: OUR STORY
-  image: assets/img/hd-wallpapers-of-superman-002.jpg
+  title: ABOUT US
+  description: KRENX IS A DIGITAL MARKETING EXPERT. WITH ADVANCED TECHNOLOGY AND QUALIFIED OPERATION TEAM, WE CAN BRING YOUR DIGITAL ADVERTISING TO NEXT LEVEL.

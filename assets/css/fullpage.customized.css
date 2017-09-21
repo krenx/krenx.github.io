@@ -5,7 +5,7 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 }
 
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1{
@@ -22,22 +22,6 @@ section{
   text-align:center;
   background-size: cover;
   background-attachment: fixed;
-}
-
-#section0 h1{
-  top: 30%;
-  transform: translateY(-50%);
-  position: relative;
-}
-#section1{
-  padding: 40% 0 0 0;
-  opacity: 0.7;
-}
-#section2{
-  padding: 6% 0 0 0;
-}
-#section2 h1{
-  color: #000;
 }
 
 .nav {
@@ -95,4 +79,206 @@ footer span {
 
 footer .head {
   margin: 0 10px;
+}
+
+.intro {
+  color: #fff;
+}
+
+#section0 .intro {
+  top:20%;
+  color:white;
+  transform: translateY(-50%);
+  display: block;
+  position: relative;
+}
+
+.intro p {
+  font-size: 2em;
+  padding: 5px 5px;
+}
+
+
+#title1, #title2 {
+    padding-top: 15%;
+}
+
+#description1, #description2 {
+  padding-top: 20px;
+}
+
+.t {
+    height:160px;
+    display: inline-block;
+    background-color:transparent;
+}
+.t-on {
+    background-position: 0 0;
+}
+.t-off {
+    background-position: 0 -160px;
+}
+
+.t-a{ width: 66px; background-size: 66px 320px; }
+.t-b{ width: 64px; background-size: 64px 320px; }
+.t-c{ width: 64px; background-size: 64px 320px; }
+.t-d{ width: 61px; background-size: 61px 320px; }
+.t-e{ width: 54px; background-size: 54px 320px; }
+.t-f{ width: 53px; background-size: 53px 320px; }
+.t-g{ width: 63px; background-size: 63px 320px; }
+.t-h{ width: 61px; background-size: 61px 320px; }
+.t-i{ width: 27px; background-size: 27px 320px; }
+.t-j{ width: 43px; background-size: 43px 320px; }
+.t-k{ width: 65px; background-size: 65px 320px; }
+.t-l{ width: 53px; background-size: 53px 320px; }
+.t-m{ width: 85px; background-size: 85px 320px; }
+.t-n{ width: 63px; background-size: 63px 320px; }
+.t-o{ width: 67px; background-size: 67px 320px; }
+.t-p{ width: 62px; background-size: 62px 320px; }
+.t-q{ width: 68px; background-size: 68px 320px; }
+.t-r{ width: 64px; background-size: 64px 320px; }
+.t-s{ width: 62px; background-size: 62px 320px; }
+.t-t{ width: 58px; background-size: 58px 320px; }
+.t-u{ width: 63px; background-size: 63px 320px; }
+.t-v{ width: 66px; background-size: 66px 320px; }
+.t-w{ width: 98px; background-size: 98px 320px; }
+.t-x{ width: 65px; background-size: 65px 320px; }
+.t-y{ width: 68px; background-size: 68px 320px; }
+.t-z{ width: 57px; background-size: 57px 320px; }
+
+.t-comma {
+    width: 22px; background-size: 22px 320px;
+}
+.t-exclamation {
+    width: 26px; background-size: 26px 320px;
+}
+.t-full-stop {
+    width: 23px; background-size: 23px 320px;
+}
+.t-question-mark {
+    width: 56px; background-size: 56px 320px;
+}
+.t-semicolon {
+    width: 25px; background-size: 25px 320px;
+}
+
+
+.d {
+    height:35.5px;
+    display: inline-block;
+    background-color:transparent;
+    max-width: 870px;
+}
+
+.d-a{ width: 15px; background-size: 15px 71px; }
+.d-b{ width: 14px; background-size: 14px 71px; }
+.d-c{ width: 14px; background-size: 14px 71px; }
+.d-d{ width: 14px; background-size: 14px 71px; }
+.d-e{ width: 12px; background-size: 12px 71px; }
+.d-f{ width: 12px; background-size: 12px 71px; }
+.d-g{ width: 14px; background-size: 14px 71px; }
+.d-h{ width: 14px; background-size: 14px 71px; }
+.d-i{ width: 6px;  background-size: 6px 71px;}
+.d-j{ width: 10px; background-size: 10px 71px; }
+.d-k{ width: 15px; background-size: 15px 71px; }
+.d-l{ width: 12px; background-size: 12px 71px; }
+.d-m{ width: 19px; background-size: 19px 71px; }
+.d-n{ width: 14px; background-size: 14px 71px; }
+.d-o{ width: 15px; background-size: 15px 71px; }
+.d-p{ width: 14px; background-size: 14px 71px; }
+.d-q{ width: 15px; background-size: 15px 71px; }
+.d-r{ width: 14px; background-size: 14px 71px; }
+.d-s{ width: 14px; background-size: 14px 71px; }
+.d-t{ width: 13px; background-size: 13px 71px; }
+.d-u{ width: 14px; background-size: 14px 71px; }
+.d-v{ width: 15px; background-size: 15px 71px; }
+.d-w{ width: 22px; background-size: 22px 71px; }
+.d-x{ width: 15px; background-size: 15px 71px; }
+.d-y{ width: 15px; background-size: 15px 71px; }
+.d-z{ width: 13px; background-size: 13px 71px; }
+
+.word {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.d-comma {
+    width: 5px; background-size: 5px 71px;
+}
+.d-exclamation {
+    width: 6px; background-size: 6px 71px;
+}
+.d-full-stop {
+    width: 5px; background-size: 5px 71px;
+}
+.d-question-mark {
+    width: 12px; background-size: 12px 71px;
+}
+.d-semicolon {
+    width: 6px; background-size: 6px 71px;
+}
+
+.d-on {
+    background-position: 0 0;
+}
+.d-off {
+    background-position: 0 -35.5px;
+}
+
+.t-animate {
+    animation: t-background-change 4s infinite;
+}
+@keyframes t-background-change {
+    0% { background-position: 0 0; }
+    30% { background-position: 0 -160px; }
+    100% { background-position: 0 -160px; }
+}
+.d-animate {
+    animation: d-background-animation 10s infinite;
+}
+
+@keyframes d-background-animation {
+    0% { background-position: 0 0; }
+    35% { background-position: 0 -35.5px; }
+    75% { background-position: 0 -35.5px; }
+    100% { background-position: 0 0; }
+}
+
+@keyframes d-background-on-to-off {
+    0% { background-position: 0 0; }
+    5% { background-position: 0 -35.5px; }
+    30% { background-position: 0 -35.5px; }
+    65% { background-position: 0 -35.5px; }
+    100% { background-position: 0 0; }
+}
+
+@keyframes d-background-off-to-on {
+    0% { background-position: 0 -35.5px; }
+    5% { background-position: 0 0; }
+    30% { background-position: 0 0; }
+    65% { background-position: 0 0; }
+    100% { background-position: 0 -35.5px; }
+}
+
+.d-on:hover {
+  animation: d-background-on-to-off 4s infinite;
+}
+
+.d-off:hover {
+  animation: d-background-off-to-on 4s infinite;
+}
+
+.install {
+  border: 1px solid rgba(255,255,255, 0.6);
+  border-radius: 6px;
+  font-size: 2em;
+  font-weight: 400;
+  padding: 10px 20px;
+  margin-top: 235px;
+  background-color: transparent;
+  background-image: none;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
 }
