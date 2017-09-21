@@ -1,7 +1,32 @@
 (function() {
   var button = document.getElementById('install-button');
   button.onclick = function() {
-    chrome.webstore.install();
+    chrome.webstore.install('https://chrome.google.com/webstore/detail/ddldpkamibcepgebhphbjkcojnbloadk', function() {
+      ga('send', 'event', {
+        eventCategory: 'type',
+        eventAction: 'Install success by install-button from ' + location.search
+      });
+    }, function() {
+      ga('send', 'event', {
+        eventCategory: 'type',
+        eventAction: 'Install failed by install-button from ' + location.search
+      });
+    });
+  }
+
+  var laptop = document.getElementById('install-by-laptop');
+  laptop.onclick = function() {
+    chrome.webstore.install('https://chrome.google.com/webstore/detail/ddldpkamibcepgebhphbjkcojnbloadk', function() {
+      ga('send', 'event', {
+        eventCategory: 'type',
+        eventAction: 'Install success by install-by-laptop from ' + location.search
+      });
+    }, function() {
+      ga('send', 'event', {
+        eventCategory: 'type',
+        eventAction: 'Install failed by install-by-laptop from ' + location.search
+      });
+    });
   }
 
   if (chrome.app.isInstalled) {
@@ -21,16 +46,16 @@
         V = G.getAttribute('data-type');
     'official-site' === V ? ga('send', 'event', {
         eventCategory: 'type',
-        eventAction: 'Open official site'
+        eventAction: 'Open official site from ' + location.search
     }) : 'webstore' === V ? ga('send', 'event', {
         eventCategory: 'type',
-        eventAction: 'Open webstore'
+        eventAction: 'Open webstore from ' + location.search
     }): 'install-button' === V ? ga('send', 'event', {
         eventCategory: 'type',
-        eventAction: 'Install by install-button'
+        eventAction: 'Install by install-button from ' + location.search
     }) : 'install-by-laptop' === V ? ga('send', 'event', {
         eventCategory: 'type',
-        eventAction: 'Install by install-by-laptop'
+        eventAction: 'Install by install-by-laptop from ' + location.search
     }): 'fb-like' === V ? ga('send', 'event', {
         eventCategory: 'type',
         eventAction: 'Facebook like'
