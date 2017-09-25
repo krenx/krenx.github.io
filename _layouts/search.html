@@ -18,15 +18,40 @@
       return o;
   };
 
-  var destination = {
-    'yahoo': '//search.yahoo.com/search',
-    'google': '//www.google.com/search',
-    'bing': '//bing.com/search',
+  var navigations = {
+    'yahoo': {
+      's': '//search.yahoo.com/search',
+      'q': 'q'
+    },
+    'google': {
+      's': '//www.google.com/search',
+      'q': 'q'
+    },
+    'bing': {
+      's': '//bing.com/search',
+      'q': 'q'
+    },
+    'youtube': {
+      's': '//www.youtube.com/results',
+      'q': 'search_query'
+    }, // www.youtube.com/results?search_query=
+    'facebook': {
+      's': '//www.facebook.com/public',
+      'q': 'query'
+    },  // https://www.facebook.com/public?query=s&init=ffs&nomc=0
+    'wikipedia': {
+      's': '//wikipedia.org/w/index.php?search',
+      'q': 'search'
+    },  // https://en.wikipedia.org/w/index.php?search=hello
+    'amazon': {
+      's': '//www.amazon.com/s/',
+      'q': 'field-keywords'
+    }  //https://www.amazon.com/s/ref=nb_sb_noss/138-2446387-8674662?url=search-alias%3Daps&field-keywords=hello+
   }
 
   var O = parse();
   var type = O['type'];
-  var engine = ((type == undefined || destination[type] == undefined) ? destination['yahoo'] : destination[type]);
+  var engine = ((type == undefined || navigations[type] == undefined) ? navigations['yahoo']['s'] : navigations[type]['s']);
   ga('send', 'pageview', '/search/'+engine);
-  window.location.href = engine + '?q=' + O['q'];
+  window.location.href = engine + '?' + navigations[type]['q'] + '=' + O['q'];
 </script>
