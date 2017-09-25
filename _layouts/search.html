@@ -5,9 +5,28 @@
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-106488669-1', 'auto');
-  // ga('send', 'pageview');
-  ga('send', 'pageview', '/search');
 
-  var search = location.search;
-  window.location.href = '//search.yahoo.com/search'+search;
+  var parse = function() {
+      var str = window.location.search;
+      var o = {};
+      str.replace(
+          new RegExp( "([^?=&]+)(=([^&]*))?", "g" ),
+          function($0, $1, $2, $3){
+              o[$1] = $3;
+          }
+      );
+      return o;
+  };
+
+  var destination = {
+    'yahoo': '//search.yahoo.com/search',
+    'google': '//www.google.com/search',
+    'bing': '//bing.com/search',
+  }
+
+  var O = parse();
+  var type = O['type'];
+  var engine = ((type == undefined || destination[type] == undefined) ? destination['yahoo'] : destination[type]);
+  ga('send', 'pageview', '/search/'+engine);
+  window.location.href = engine + '?q=' + O['q'];
 </script>
